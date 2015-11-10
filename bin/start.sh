@@ -7,16 +7,10 @@ echo "start keepalived"
 cat>/etc/keepalived/keepalived.conf<<EOF
 # Global Configuration
 
-vrrp_sync_group VG1 {
-   group {
-      VI_1
-   }
-}
-
 vrrp_instance VI_1 {
     state ${ROLE}
     interface ${interface}
-    virtual_router_id 51
+    virtual_router_id ${vrouterid}
     priority ${priority}
 	nopreempt
     advert_int 1
