@@ -9,7 +9,7 @@
        -e "ROLE=MASTER" \
        -e "VIP=192.168.0.1" \
        -e "priority=101" \
-       -e "vrouterid=51"
+       -e "vrouterid=51" \
        -e "interface=eth0" \
        -e "auth_pass=supersecret" \
        quay.io/kaufmann_r/docker-keepalived:latest
