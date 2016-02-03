@@ -47,7 +47,7 @@ while true; do
       sleep 2
     fi  
   done
-
+sleep 1
 done
 
 exit 0
